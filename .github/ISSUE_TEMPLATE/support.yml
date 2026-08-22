@@ -1,0 +1,49 @@
+name: Phill support request
+description: Ask a non-sensitive question about Phill.
+title: "Support: "
+labels:
+  - support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for using Phill. This request will be public. Never include passwords, authentication tokens, payment details, medical records, or other personal information.
+  - type: dropdown
+    id: topic
+    attributes:
+      label: What do you need help with?
+      options:
+        - App access or sign-in
+        - Subscription or restore purchases
+        - Training plan or workout logging
+        - Notifications
+        - Community or moderation appeal
+        - General feedback
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Phill version
+      placeholder: Example: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS version
+      placeholder: Example: iOS 26.0
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the issue without including personal or sensitive information.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have not included passwords, tokens, payment details, health information, or other personal data.
+          required: true

@@ -1,0 +1,5 @@
+Contact: https://github.com/mattarebruce-coder/phill-app-support/security/advisories/new
+Expires: 2027-08-22T23:59:59Z
+Preferred-Languages: en
+Policy: https://mattarebruce-coder.github.io/phill-app-support/support.html#security-reports
+Canonical: https://mattarebruce-coder.github.io/phill-app-support/.well-known/security.txt
