@@ -9,11 +9,11 @@
 </head>
 <body>
   <h1>Phill Privacy Policy</h1>
-  <p><strong>Effective:</strong> August 22, 2026 · <strong>Version:</strong> 2026-08-22</p>
+  <p><strong>Effective:</strong> September 14, 2026 · <strong>Version:</strong> 2026-09-14</p>
   <p>This policy applies to the Phill app, required Phill account, and optional Community. The person or organization identified as Phill’s seller on the App Store is responsible for this service.</p>
 
   <h2>Data kept on your device</h2>
-  <p>Your goals, plan, capability estimates, schedule, equipment, injuries, readiness answers, workout logs, settings, and coach context are stored in the app’s protected container on your device. Phill does not upload this training record to Community or to an external AI provider. Apple may include app data in an operating-system backup according to your Apple backup settings.</p>
+  <p>Your goals, plan, capability estimates, schedule, equipment, injuries, readiness answers, workout logs, settings, and coach context are stored in the app’s protected container on your device. Phill does not upload this record to Community. If you enable the cloud coach, the app sends a limited factual summary and recent coach conversation for each question to the hosted coach as described below. Apple may include app data in an operating-system backup according to your Apple backup settings.</p>
 
   <h2>Account data</h2>
   <p>When you create an account, Supabase processes your email address, unique account identifier, salted password verifier, session tokens, and legal-consent dates and versions. The password you type is sent to Supabase over HTTPS and is never written to Phill’s local files.</p>
@@ -29,10 +29,10 @@
 
   <h2>Notifications and coach processing</h2>
   <p>If you grant permission, Phill schedules workout and goal reminders through Apple’s notification system. Preferences are managed on your device, and notifications are not used for third-party advertising.</p>
-  <p>The deterministic coach works locally. On supported Apple devices, optional generative responses use Apple’s on-device Foundation Models framework. Phill does not send training context to a third-party AI service.</p>
+  <p>Settings lets you choose the smarter cloud coach. When enabled, Phill sends your question, a limited factual training summary, and up to six recent coach messages through an authenticated Supabase function to Cloudflare Workers AI. Transport is encrypted. Phill does not store those prompts or replies on its servers, and Cloudflare states that Workers AI customer content is not used to train models or improve services without explicit consent. You can turn the cloud coach off at any time and use an on-device or built-in coach.</p>
 
   <h2>Purposes and service providers</h2>
-  <p>Data is used only to authenticate you, provide paid features, operate and moderate Community, protect the service, respond to support requests, comply with law, and preserve your choices. Supabase provides authentication, database hosting, and Community storage. Apple provides App Store billing, entitlement verification, operating-system notifications, and optional on-device model capabilities. Each provider’s policy governs information it processes independently.</p>
+  <p>Data is used only to authenticate you, provide paid features, answer cloud-coach questions you submit, operate and moderate Community, protect the service, respond to support requests, comply with law, and preserve your choices. Supabase provides authentication, database hosting, Community storage, and the authenticated cloud-coach gateway. Cloudflare processes cloud-coach prompts and replies when you enable that option. Apple provides App Store billing, entitlement verification, operating-system notifications, and optional on-device model capabilities. Coach model files are downloaded from Hugging Face when you choose the local model; that download requests the model itself and carries none of your training data. Each provider’s policy governs information it processes independently.</p>
 
   <h2>No sale, advertising, or cross-app tracking</h2>
   <p>Phill does not sell personal information, show third-party ads, or track you across other companies’ apps and websites.</p>
@@ -50,7 +50,7 @@
   <p>You can decline notifications, avoid Community, block users, report content, erase local training history, sign out, and delete your account in the app. You may contact Support to ask about access, correction, portability, objection, restriction, or deletion rights available where you live. See <a href="privacy-choices.html">Privacy Choices</a> for instructions.</p>
 
   <h2>International processing</h2>
-  <p>Supabase may process account and Community data outside your region under its contractual and security safeguards.</p>
+  <p>Supabase may process account and Community data outside your region under its contractual and security safeguards. Cloudflare may process cloud-coach requests outside your region when you enable that feature.</p>
 
   <h2>Changes and contact</h2>
   <p>Material policy changes may require renewed acknowledgement in Phill. For non-sensitive questions, use <a href="https://github.com/mattarebruce-coder/phill-app-support/issues/new?template=support.yml">Phill Support</a>. For a sensitive privacy or security concern, use the <a href="https://github.com/mattarebruce-coder/phill-app-support/security/advisories/new">private report form</a>. Do not include passwords, payment details, authentication tokens, or medical records.</p>
