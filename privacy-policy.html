@@ -9,6 +9,7 @@
 </head>
 <body>
   <h1>Phill Privacy Policy</h1>
+  <p><strong>Analytics disclosure updated:</strong> October 6, 2026</p>
   <p><strong>Effective:</strong> September 15, 2026 · <strong>Version:</strong> 2026-09-15</p>
   <p>This policy applies to the Phill app, required Phill account, and optional Community. The person or organization identified as Phill’s seller on the App Store is responsible for this service.</p>
 
@@ -27,12 +28,17 @@
   <h2>Purchases</h2>
   <p>Apple processes subscription purchases and payment details. Phill receives signed StoreKit product and entitlement information needed to unlock membership, restore access, and show subscription status. Phill does not receive your payment-card details.</p>
 
+  <h2>Optional product analytics and onboarding</h2>
+  <p>If you allow usage analytics, Mixpanel receives app-open, onboarding-screen, signup, and membership events, event timestamps, a random device identifier, and app/device metadata. After sign-in these events are linked to your Phill account UUID. Purchase events may include the StoreKit transaction identifier, amount, currency, and status. Mixpanel processing is configured for the United States. These events do not contain your name, email, questionnaire answers, training records, health details, or coach/Community messages.</p>
+  <p>Superwall delivers the onboarding and membership screens and uses account identifiers and subscription status to present the appropriate experience. Its SDK event reporting is enabled only when you allow analytics. Your training questionnaire choices are handed directly to local training setup; Phill does not send them to Mixpanel as event properties or Superwall user attributes.</p>
+  <p>Analytics is optional. You can decline at first launch or turn off Share usage analytics in Settings to stop future analytics collection. Turning it off does not delete events already received. To request deletion of earlier analytics associated with your account or device, use the private privacy-request form below; Phill may verify account ownership and coordinate deletion with its providers. Provider retention and backup schedules apply to records already received.</p>
+
   <h2>Notifications and coach processing</h2>
   <p>If you grant permission, Phill schedules workout and goal reminders through Apple’s notification system. Preferences are managed on your device, and notifications are not used for third-party advertising.</p>
   <p>Settings lets you choose the smarter cloud coach. When enabled, Phill sends your question, a limited factual training summary, and up to six recent coach messages through an authenticated Supabase function to Cloudflare Workers AI. Transport is encrypted. Phill does not store those prompts or replies on its servers, and Cloudflare states that Workers AI customer content is not used to train models or improve services without explicit consent. You can turn the cloud coach off at any time and use an on-device or built-in coach.</p>
 
   <h2>Purposes and service providers</h2>
-  <p>Data is used only to authenticate you, provide paid features, answer cloud-coach questions you submit, operate and moderate Community, protect the service, respond to support requests, comply with law, and preserve your choices. Supabase provides authentication, database hosting, Community storage, and the authenticated cloud-coach gateway. Cloudflare processes cloud-coach prompts and replies when you enable that option. Apple provides App Store billing, entitlement verification, operating-system notifications, and optional on-device model capabilities. Coach model files are downloaded from Hugging Face when you choose the local model; that download requests the model itself and carries none of your training data. Each provider’s policy governs information it processes independently.</p>
+  <p>Data is used only to authenticate you, provide paid features, answer cloud-coach questions you submit, operate and moderate Community, protect the service, measure and improve the app when you allow analytics, respond to support requests, comply with law, and preserve your choices. Supabase provides authentication, database hosting, Community storage, and the authenticated cloud-coach gateway. Cloudflare processes cloud-coach prompts and replies when you enable that option. Apple provides App Store billing, entitlement verification, operating-system notifications, and optional on-device model capabilities. Coach model files are downloaded from Hugging Face when you choose the local model; that download requests the model itself and carries none of your training data. Mixpanel provides optional product analytics and Superwall delivers onboarding and membership screens. Each provider’s policy governs information it processes independently.</p>
 
   <h2>No sale, advertising, or cross-app tracking</h2>
   <p>Phill does not sell personal information, show third-party ads, or track you across other companies’ apps and websites.</p>
